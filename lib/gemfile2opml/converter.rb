@@ -23,6 +23,7 @@ class Gemfile2opml::Converter
               targets[target].uniq.sort.map {|name|#string
                 outline.outline(
                   title: name,
+                  type: 'rss',
                   htmlUrl: "https://rubygems.org/gems/#{name}",
                   xmlUrl: "https://rubygems.org/gems/#{name}/versions.atom",
                 )
