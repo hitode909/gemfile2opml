@@ -1,28 +1,29 @@
 # Gemfile2opml
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gemfile2opml`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gemfile2opml generates OPML from Gemfile or gemspec.
+This is useful for subscribe your depending libraries.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Gemfile2opml is a command-line tool.
 
-```ruby
-gem 'gemfile2opml'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install gemfile2opml
+% gem install gemfile2opml
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+% gemfile2opml PATH_TO_GEMFILE > a.opml
+```
+
+or,
+
+```
+% gemfile2opml PATH_TO_GEMSPEC > a.opml
+```
+
+Then, subscribe OPML file with your favorite feed reader.
 
 ## Development
 
@@ -32,5 +33,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gemfile2opml.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hitode909/gemfile2opml.
 
