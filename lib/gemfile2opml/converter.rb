@@ -20,7 +20,7 @@ class Gemfile2opml::Converter
         xml.body {|body|
           targets.keys.map {|target|#string
             body.outline(title: target) {|outline|
-              targets[target].map {|name|#string
+              targets[target].uniq.sort.map {|name|#string
                 outline.outline(
                   title: name,
                   htmlUrl: "https://rubygems.org/gems/#{name}",
